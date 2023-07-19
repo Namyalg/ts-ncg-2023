@@ -7,9 +7,19 @@ This is a full-stack web application built with React and Java.
 The backend uses Spring Boot along with the in-memory database H2.
 
 **Steps to run the application**
-1. (Assuming the requirements for Spring Boot are installed), either open the `backend` folder in IntelliJ/Eclipse and run the file `` or run the command `mvn package` from the root of the project
+1. (Assuming the requirements for Spring Boot are installed), either open the `backend` folder in IntelliJ/Eclipse and run the file `WorldBankViewApplication.java` or run the command `mvn package` from the root of the project
 2. The application will run on port `9090`
 3. The `H2` UI will be available at the route `/h2-ui`
+
+The following routes are exposed : 
+
+| Method  | Route | Description |
+| ------------- | ------------- |
+| `GET` | `/view`  | Return all views |
+| `GET` | `/view/{id}`  | Return the view with id `id` if it exists |
+| `PUT` | `/view/{id}`  | Update the view with `id` if it exists |
+| `POST` | `/view`  | Add a new view to the table |
+| `DELETE` | `/view/{id}`  | Delete the view with id `id` if it exists |
 
 ### Frontend
 
