@@ -14,7 +14,7 @@ The backend uses Spring Boot along with the in-memory database H2.
 The following routes are exposed : 
 
 | Method  | Route | Description |
-| ------------- | ------------- |
+| ------- | ------ | ----------- |
 | `GET` | `/view`  | Return all views |
 | `GET` | `/view/{id}`  | Return the view with id `id` if it exists |
 | `PUT` | `/view/{id}`  | Update the view with `id` if it exists |
